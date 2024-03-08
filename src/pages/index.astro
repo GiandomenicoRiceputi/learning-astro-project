@@ -1,5 +1,8 @@
 ---
-const profilePicture = 'https://i.imgur.com/JPGFE75.jpg';
+import '../styles/global.css'
+
+import Main from "../layouts/Main.astro";
+const profilePicture = '../public/my_avatar.jpg';
 const profilePictureA = 'https://imgur.com/ujJsAVA.jpg';
 const profilePictureB = 'https://imgur.com/EhoxGeQ.jpg';
 const profilePictureC = 'https://imgur.com/s3eJoc6.jpg';
@@ -50,16 +53,8 @@ const profilePictureH = 'https://imgur.com/6AozXgd.jpg';
 </style>
 
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-	<!-- Look here 👀 -->
+
+	<Main>
 	<div class="profile">
 		<img
 			class="profile__picture"
@@ -69,8 +64,8 @@ const profilePictureH = 'https://imgur.com/6AozXgd.jpg';
 			height="100px"
 		/>
 		<div class="profile__details">
-			<h1>Frau Katerina</h1>
-			<h2>VP of Engineering at Goooogle</h2>
+			<h1 class="colorfull-name">GiandoDev</h1>
+			<h2>Creative Developer at Earth</h2>
 			<p>
 				Helping developers be excellent and succeed at building scalable
 				products
@@ -88,5 +83,4 @@ const profilePictureH = 'https://imgur.com/6AozXgd.jpg';
 		<div class="photo"><img src={profilePictureH} alt="Placeholder Image"></div>
 		<!-- Add more photos as needed -->
 	</div>
-	</body>
-</html>
+</Main>
