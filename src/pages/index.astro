@@ -2,15 +2,9 @@
 import '../styles/global.css'
 
 import Main from "../layouts/Main.astro";
+import Navbar from "../components /Navbar.astro";
+import Hero from "../components /Hero.astro";
 const profilePicture = '../public/my_avatar.jpg';
-const profilePictureA = 'https://imgur.com/ujJsAVA.jpg';
-const profilePictureB = 'https://imgur.com/EhoxGeQ.jpg';
-const profilePictureC = 'https://imgur.com/s3eJoc6.jpg';
-const profilePictureD = 'https://imgur.com/WLy1Pii.jpg';
-const profilePictureE = 'https://imgur.com/bR3Eiq1.jpg';
-const profilePictureF = 'https://imgur.com/7qILy6j.jpg';
-const profilePictureG = 'https://imgur.com/lN5zEOF.jpg';
-const profilePictureH = 'https://imgur.com/6AozXgd.jpg';
 ---
 
 <style>
@@ -55,6 +49,8 @@ const profilePictureH = 'https://imgur.com/6AozXgd.jpg';
 
 
 	<Main>
+		<Navbar />
+		<Hero />
 	<div class="profile">
 		<img
 			class="profile__picture"
@@ -64,23 +60,12 @@ const profilePictureH = 'https://imgur.com/6AozXgd.jpg';
 			height="100px"
 		/>
 		<div class="profile__details">
-			<h1 class="colorfull-name">GiandoDev</h1>
+			<h1 class="title-font">GiandoDev</h1>
 			<h2>Creative Developer at Earth</h2>
 			<p>
 				Helping developers be excellent and succeed at building scalable
 				products
 			</p>
 		</div>
-	</div>
-	<div class="gallery">
-		<div class="photo"><img src={profilePictureA} alt="Placeholder Image"></div>
-		<div class="photo"><img src={profilePictureB} alt="Placeholder Image"></div>
-		<div class="photo"><img src={profilePictureC} alt="Placeholder Image"></div>
-		<div class="photo"><img src={profilePictureD} alt="Placeholder Image"></div>
-		<div class="photo"><img src={profilePictureE} alt="Placeholder Image"></div>
-		<div class="photo"><img src={profilePictureF} alt="Placeholder Image"></div>
-		<div class="photo"><img src={profilePictureG} alt="Placeholder Image"></div>
-		<div class="photo"><img src={profilePictureH} alt="Placeholder Image"></div>
-		<!-- Add more photos as needed -->
 	</div>
 </Main>

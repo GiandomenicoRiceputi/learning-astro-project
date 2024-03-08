@@ -1,3 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
 h1 {
     font-size: 3rem;
     line-height: 1;
@@ -11,16 +27,15 @@ h1 + h2 {
 }
 
 main {
-    max-width: 40rem;
     margin: auto;
 }
 
-.colorfull-name {
-    font-family: "Honk", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-            "MORF" 15,
-            "SHLN" 50;
-}
+/* <uniquifier>: Use a unique and descriptive class name*/
+/* <weight>: Use a value from 300 to 700*/
+
+.title-font {
+                font-family: "Quicksand", sans-serif;
+                font-weight: 400;
+                font-optical-sizing: auto;
+                font-style: normal;
+            }
