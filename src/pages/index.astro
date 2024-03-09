@@ -4,7 +4,8 @@ import '../styles/global.css'
 import Main from "../layouts/Main.astro";
 import Navbar from "../components /Navbar.astro";
 import Hero from "../components /Hero.astro";
-const profilePicture = '../public/my_avatar.jpg';
+import Footer from "../components /Footer.astro";
+
 ---
 
 <style>
@@ -51,21 +52,6 @@ const profilePicture = '../public/my_avatar.jpg';
 	<Main>
 		<Navbar />
 		<Hero />
-	<div class="profile">
-		<img
-			class="profile__picture"
-			src={profilePicture}
-			alt="Frau Katerina's headshot."
-			width="100px"
-			height="100px"
-		/>
-		<div class="profile__details">
-			<h1 class="title-font">GiandoDev</h1>
-			<h2>Creative Developer at Earth</h2>
-			<p>
-				Helping developers be excellent and succeed at building scalable
-				products
-			</p>
-		</div>
-	</div>
+	<Footer />
+
 </Main>

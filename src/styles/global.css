@@ -1,3 +1,18 @@
+html {
+    --background: rgb(193, 225, 193);
+    --background-light: color-mix(in srgb, var(--background), white);
+    --background-lighter: color-mix(in srgb, var(--background), white 75%);
+            }
+
+html.dark {
+    --background: rgb(53, 94, 59);
+    --background-dark: color-mix(in srgb, var(--background), black);
+    --background-darker: color-mix(in srgb, var(--background), black 75%);
+}
+
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;

@@ -1,6 +1,6 @@
 ---
 
----
+import ThemeToggler from "./ThemeToggler.astro";---
 <script>
     const header = document.querySelector(".main-header");
 
@@ -305,8 +305,9 @@
     }
 </style>
 
-<header class="main-header">
+<header class="main-header" >
     <div class="logo">
+        <ThemeToggler />
         <a href="#">LOGO</a>
     </div>
 
